@@ -5,7 +5,7 @@ if(isset($_REQUEST['submit']))
     require_once "../models/db.php";
     require_once "../models/data_model.php";
    $msg='';
-   $feature= trim($_REQUEST['feature']);
+   $feature= strtoupper(trim($_REQUEST['feature']));
    $phase= $_REQUEST['phase'];
    $specification= $_REQUEST['specification'];
    $screen_defination= $_REQUEST['screen_defination'];
